@@ -1,28 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.logo-navbar{
-    height: 50px;
+.logo-navbar {
+  height: 50px;
 }
 
-.nav-item{
-    padding: 10px;
-    color: #000;
+.nav-item {
+  padding: 10px;
+  color: #000;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-a:hover{
-    color: #fff;
-    text-decoration: underline;
+a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
+  font-size: 50px;
+}
+
+h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.SM-01 {
+  height: 500px;
+  margin-top: 10px;
+}
+
+.nright{
+padding: 30px;
+}
+
+.nright p{
+    margin-top: 30px;
+    }
+
+h4{
     font-size: 50px;
+    margin-left: 40px;
+}
+
+.mt-4{
+    background-image: url(../Images/IMG-SM-02.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.mt-4 .SM-02{
+    height: 50px;
 }
