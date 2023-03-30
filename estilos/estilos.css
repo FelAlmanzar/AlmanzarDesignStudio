@@ -89,3 +89,8 @@ h5 {
 #galeria img:hover {
   border: 5px solid #fff;
 }
+
+.frase p{
+  padding: 50px;
+  text-align: center;
+}
