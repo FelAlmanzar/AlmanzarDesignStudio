@@ -27,9 +27,9 @@ a:hover {
   font-size: 50px;
 }
 
-h2{
-    font-size: 20px;
-    margin-top: 20px;
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .SM-01 {
@@ -37,26 +37,55 @@ h2{
   margin-top: 10px;
 }
 
-.nright{
-padding: 30px;
+.nright {
+  padding: 30px;
 }
 
-.nright p{
-    margin-top: 30px;
-    }
-
-h4{
-    font-size: 50px;
-    margin-left: 40px;
+.nright p {
+  margin-top: 30px;
 }
 
-.mt-4{
-    background-image: url(../Images/IMG-SM-02.png);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+h4 {
+  font-size: 50px;
+  margin-left: 40px;
 }
 
-.mt-4 .SM-02{
-    height: 50px;
+.mt-4 {
+  background-image: url(../Images/IMG-SM-02.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.mt-4 .SM-02 {
+  height: 50px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-select {
+  text-align: center;
+}
+
+#galeria {
+  margin-top: 80px;
+}
+
+#galeria .col-lg-4 {
+  padding: 25px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#galeria img:hover {
+  border: 5px solid #fff;
 }
