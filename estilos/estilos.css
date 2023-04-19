@@ -1,16 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.logo-navbar {
-  height: 50px;
+nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
 }
 
-.nav-item {
-  padding: 10px;
-  color: #000;
+.enlace {
+  position: absolute;
+  padding: 10px 50px;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 25px 5px 0 5px;
+}
+nav ul li a {
+  color: #a7aaaa;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+li a.active, li a:hover {
+  color: #fff;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 a {
@@ -25,6 +70,15 @@ a:hover {
 
 .carousel-caption h3 {
   font-size: 50px;
+}
+
+.btn {
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.7);
+  transition: all 0.4s;
 }
 
 h2 {
@@ -72,6 +126,17 @@ h5 {
   text-align: center;
 }
 
+.nav-link {
+  color: #000;
+}
+
+.dropdown-item:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 #galeria {
   margin-top: 80px;
 }
@@ -83,14 +148,235 @@ h5 {
 #galeria img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #galeria img:hover {
   border: 5px solid #fff;
 }
 
-.frase p{
+.frase p {
   padding: 50px;
   text-align: center;
 }
+
+header {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Images/Contacto.jpg);
+  width: 100%;
+  height: auto;
+}
+
+.contactoText {
+  display: flex;
+  justify-content: center;
+}
+.contactoText p {
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contenedorHeader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenidoIzq {
+  width: 50%;
+  height: auto;
+}
+
+.textContact1 {
+  color: #f8b900;
+  padding: 30px;
+  margin-top: 90px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-family: "Cabin", sans-serif;
+  font-weight: lighter;
+  line-height: 50px;
+}
+
+.textContact1 .textMed {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.contenidoIzq p {
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+  text-align: left;
+  color: #fff;
+  padding: 30px;
+  margin-left: 50px;
+}
+
+.contenidoDer {
+  width: auto;
+  height: auto;
+}
+
+.contenedorForm {
+  width: 500px;
+  height: 650px;
+  background-color: #151616;
+}
+
+.contenedorForm p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  width: 400px;
+  padding-top: 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.contenedorForm form {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Cabin", sans-serif;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.contenedorForm form ul {
+  list-style: none;
+}
+
+.contenedorForm form ul li {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.contenedorForm form ul li input {
+  width: 350px;
+  height: 20px;
+  background-color: #fff;
+  border: none;
+}
+
+.contenedorForm form ul li textarea {
+  width: 350px;
+  height: 70px;
+  background-color: #fff;
+  border: none;
+}
+
+.check {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.enviar input {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: black;
+  font-family: "Cabin", sans-serif;
+  cursor: pointer;
+}
+
+.enviar input:hover {
+  background-color: #f8b900;
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .textContact1 {
+    color: #f8b900;
+    padding: 0 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    font-weight: lighter;
+  }
+  .textContact1 .textMed {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .contenidoIzq p {
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    text-align: left;
+    color: #fff;
+    padding: 0 30px;
+    margin: 30px 0 30px 5px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 3;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: #fff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  header {
+    background-image: url(../Images/Contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+  }
+  .textContact1 {
+    color: #f8b900;
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    font-weight: lighter;
+    line-height: 50px;
+  }
+  .textContact1 .textMed {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .contenidoIzq p {
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    text-align: left;
+    color: #fff;
+    padding: 0px;
+    margin: 10px 0;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
