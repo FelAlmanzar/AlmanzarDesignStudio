@@ -114,6 +114,16 @@ li a.active, li a:hover{
     background-size: cover;
     background-position: center;
     text-align: center;
+    transition: all 0.2s;
+  }
+
+  .mt-4:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+  }
+
+  .mt-4 img:hover{
+    transform: rotateZ(-90deg);
   }
   
   .mt-4 .SM-02 {
@@ -125,6 +135,19 @@ li a.active, li a:hover{
     font-size: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
+    color: #151616;
+    a{
+        font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #151616;
+    }
+  }
+  h5 a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
   }
   
   .form-select {
@@ -142,8 +165,21 @@ li a.active, li a:hover{
     background-color: rgba($color: #fff, $alpha: 0);
   }
 
+  .textCateg{
+    background-color: #f8b900;
+    padding: 20px 0;
+    margin-top: 30px;
+    p{
+        font-size: 100px;
+        text-transform: uppercase;
+        font-family: $font1;
+        font-weight: bold;
+        text-align: center;
+    }
+  }
+
   #galeria {
-    margin-top: 80px;
+    margin-top: 0px;
   }
   
   #galeria .col-lg-4 {
@@ -158,6 +194,21 @@ li a.active, li a:hover{
   
   #galeria img:hover {
     border: 5px solid #fff;
+  }
+
+  .col-lg-4{
+    background-color: $color1;
+    padding: 5px;
+    .titulo{
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    p{
+        color: #fff;
+    }
   }
   
   .frase p{
@@ -214,26 +265,26 @@ li a.active, li a:hover{
   .textContact1 .textMed {
     font-size: 80px;
     font-weight: bold;
-    // animation-duration: 2s;
-    // animation-name: aparecer;
-    // animation-delay: 5s;
-    // animation-direction: alternate;
-    // animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
   }
 
-//   @keyframes aparecer {
-//     0%{opacity: 0;
-//   }
+  @keyframes aparecer {
+    0%{opacity: 0;
+  }
 
-//   50%{
-//     transform: translateX(100px);
-//   }
+  50%{
+    transform: translateX(100px);
+  }
 
-//   100%{
-//     opacity: 1;
-//     transform: translateX(-100px);
-//   }
-// }
+  100%{
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+}
   .contenidoIzq p {
     font-size: 20px;
     font-family: "Cabin", sans-serif;
