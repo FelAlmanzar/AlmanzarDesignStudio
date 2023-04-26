@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200;700&family=Quicksand:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -39,7 +38,7 @@ nav ul li a {
 }
 
 li a.active, li a:hover {
-  color: #fff;
+  color: #f7ee00;
   transition: 0.5s;
   text-decoration: none;
 }
@@ -64,8 +63,286 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: #f7ee00;
   text-decoration: underline;
+}
+
+#bienvenida {
+  min-height: 100vh;
+  position: relative;
+}
+#bienvenida .soy {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  width: 60%;
+  padding-top: 120px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+#bienvenida .soy .line1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #f7ee00;
+}
+#bienvenida .soy .line2 {
+  display: inline-block;
+  vertical-align: bottom;
+  animation: blinker 10s linear infinite;
+  animation-delay: 30s;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  color: #f7ee00;
+  line-height: 100%;
+}
+#bienvenida .soy .line2 span {
+  float: left;
+  overflow: hidden;
+  animation: hideShow 2s linear infinite;
+}
+#bienvenida .soy .line2 span:nth-child(1) {
+  animation-delay: -5s;
+}
+#bienvenida .soy .line2 span:nth-child(2) {
+  animation-delay: -10s;
+}
+@keyframes hideShow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: auto;
+  }
+}
+#bienvenida .soy .line3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  width: 60%;
+  margin-top: 20px;
+}
+#bienvenida .soy .boton1 {
+  padding: 10px;
+  margin-top: 50px;
+  background-color: #f7ee00;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+#bienvenida .soy .boton1:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+#bienvenida video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bienvenida .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.servicios .titulo-servicios {
+  background-color: #f7ee00;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.servicios p {
+  margin-top: 30px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 50%;
+  text-align: center;
+}
+
+.galeria-home {
+  margin-top: 30px;
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: repeat(3, 360px);
+  justify-content: center;
+}
+.galeria-home .img {
+  background-size: cover;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url(../Images/index-Dis.jpg);
+  transition: all 0.2s;
+}
+
+.img2 {
+  background-image: url(../Images/GyJ-Branding.png);
+  transition: all 0.2s;
+}
+
+.img3 {
+  background-image: url(../Images/Diseno-Stand.png);
+  transition: all 0.2s;
+  filter: grayscale(100%);
+}
+
+.img4 {
+  background-image: url(../Images/GyJ-Branding.png);
+  transition: all 0.2s;
+}
+
+.img5 {
+  background-image: url(../Images/Optane\ BBQ\ -\ general.png);
+  transition: all 0.2s;
+  filter: grayscale(100%);
+}
+
+.img6 {
+  background-image: url(../Images/index-Arq.jpg);
+  transition: all 0.2s;
+}
+
+.img7 {
+  background-image: url(../Images/GyJ-Branding.png);
+  transition: all 0.2s;
+}
+
+.img8 {
+  background-image: url(../Images/GyJ-Branding.png);
+  transition: all 0.2s;
+}
+
+.img9 {
+  background-image: url(../Images/Optane\ BBQ\ -\ general.png);
+  transition: all 0.2s;
+  filter: grayscale(100%);
+}
+
+.img1:hover {
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.img2:hover {
+  background-image: url(../Images/GyJ-Branding-a.png);
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.img3:hover {
+  transform: scale(1.01);
+  transition: all 0.4s;
+  filter: grayscale(0%);
+}
+
+.img4:hover {
+  background-image: url(../Images/GyJ-Branding-a.png);
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.img5:hover {
+  transform: scale(1.01);
+  transition: all 0.4s;
+  filter: grayscale(0%);
+}
+
+.img6:hover {
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.img7:hover {
+  background-image: url(../Images/GyJ-Branding-a.png);
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.img8:hover {
+  background-image: url(../Images/GyJ-Branding-a.png);
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.img9:hover {
+  transform: scale(1.01);
+  transition: all 0.4s;
+  filter: grayscale(0%);
+}
+
+.miPerfil {
+  background-color: #f7ee00;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.miPerfil .fotoIndexPerfil {
+  margin-left: 50px;
+  width: 300px;
+}
+.miPerfil .textPerfil {
+  padding: 30px;
+}
+.miPerfil .textPerfil .nombreInd {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.miPerfil .textPerfil .profesionInd {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.miPerfil .textPerfil .lkdn {
+  font-size: 30px;
+  color: #151616;
+}
+.miPerfil .textPerfil .boton2 {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f7ee00;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.miPerfil .textPerfil .boton2:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+.ctaIndex {
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  color: #000;
 }
 
 .carousel-caption h3 {
@@ -79,6 +356,13 @@ a:hover {
 .btn:hover {
   transform: scale(1.7);
   transition: all 0.4s;
+}
+
+.headerSM {
+  background-color: #000;
+}
+.headerSM img {
+  width: 400px;
 }
 
 h2 {
@@ -365,6 +649,17 @@ header {
   nav ul li a {
     font-size: 16px;
   }
+  .line2 {
+    font-size: 50px;
+  }
+  .galeria-home {
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(3, 260px);
+    justify-content: center;
+  }
   .textContact1 {
     color: #f8b900;
     padding: 0 30px;
@@ -417,6 +712,92 @@ header {
   }
   #check:checked ~ ul {
     left: 0;
+  }
+  #bienvenida {
+    min-height: 100vh;
+    position: relative;
+  }
+  #bienvenida .soy {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    width: 60%;
+    padding-top: 120px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  }
+  #bienvenida .soy .line1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    color: #f7ee00;
+  }
+  #bienvenida .soy .line2 {
+    display: inline-block;
+    vertical-align: bottom;
+    animation: blinker 10s linear infinite;
+    animation-delay: 30s;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #f7ee00;
+    line-height: 100%;
+  }
+  #bienvenida .soy .line2 span {
+    float: left;
+    overflow: hidden;
+    animation: hideShow 2s linear infinite;
+  }
+  #bienvenida .soy .line2 span:nth-child(1) {
+    animation-delay: -5s;
+  }
+  #bienvenida .soy .line2 span:nth-child(2) {
+    animation-delay: -10s;
+  }
+  @keyframes hideShow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: auto;
+    }
+  }
+  #bienvenida .soy .line3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    width: 90%;
+    margin-top: 20px;
+  }
+  #bienvenida .soy .boton1 {
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #f7ee00;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  #bienvenida .soy .boton1:hover {
+    transform: scale(1.1);
+    transition: all 0.4s;
+  }
+  .galeria-home {
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(5, 200px);
+    justify-content: center;
+  }
+  .ctaIndex {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #000;
   }
   header {
     background-image: url(../Images/Contacto.jpg);
