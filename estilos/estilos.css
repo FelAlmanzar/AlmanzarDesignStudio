@@ -217,7 +217,7 @@ a:hover {
 }
 
 .img5 {
-  background-image: url(../Images/Optane\ BBQ\ -\ general.png);
+  background-image: url(../Images/DS-Acer.png);
   transition: all 0.2s;
   filter: grayscale(100%);
 }
@@ -238,7 +238,7 @@ a:hover {
 }
 
 .img9 {
-  background-image: url(../Images/Optane\ BBQ\ -\ general.png);
+  background-image: url(../Images/DA-Molino.jpg);
   transition: all 0.2s;
   filter: grayscale(100%);
 }
@@ -915,7 +915,7 @@ header {
   }
   .galeria-home {
     width: 100%;
-    height: 1200px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(5, 200px);
