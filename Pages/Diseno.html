@@ -57,41 +57,44 @@
     <!-- selector fin-->
 
     <!--inicio Galeria-->
-    <section id="galeria" class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../Images/GyJ-Branding.png" alt="Galeria Imagen" />
-          <span class="titulo">G&J Ingenieros</span>
-          <p>Creación de Marca y usos</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../Images/01_Logo_Vtl_Moncho-color.jpg" alt="Galeria Imagen" />
-          <span class="titulo">Moncho Bienestar Animal</span>
-          <p>Creación de Marca y manual </p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../Images/UI-design.png" alt="Galeria Imagen" />
-          <span class="titulo">Landing Technology</span>
-          <p>Diagramación UI Landing Page</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../Images/GyJ-Branding.png" alt="Galeria Imagen" />
-          <span class="titulo">Título</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../Images/GyJ-Branding.png" alt="Galeria Imagen" />
-          <span class="titulo">Título</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../Images/GyJ-Branding.png" alt="Galeria Imagen" />
-          <span class="titulo">Título</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+    <div class="gallery-container">
+      <div class="gallery__item">
+        <img src="../Images/GyJ-Branding-a.png" alt="" class="gallery__img">
+        <h3 class="gallery__title">G & J Ingenieros</h3>
       </div>
-    </section>
+      <div class="gallery__item">
+        <img src="../Images/SM-intel.jpg" alt="" class="gallery__img">
+        <h3 class="gallery__title">Intel gamer days</h3>
+      </div>
+      <div class="gallery__item">
+        <img src="../Images/LP-HPE.png" alt="" class="gallery__img">
+        <h3 class="gallery__title">Landing Page HPE</h3>
+      </div>
+      <div class="gallery__item">
+        <img src="../Images/UI-Intel.png" alt="" class="gallery__img">
+        <h3 class="gallery__title">Intel</h3>
+      </div>
+      <div class="gallery__item">
+        <img src="../Images/BR-Jesaro.png" alt="" class="gallery__img">
+        <h3 class="gallery__title">Jesaro Architectural Design</h3>
+      </div>
+      <div class="gallery__item">
+        <img src="../Images/Mail-Ceico.jpg" alt="" class="gallery__img">
+        <h3 class="gallery__title">imagen 6</h3>
+      </div>
+      <div class="gallery__item">
+        <img src="../Images/Br-Moncho.png" alt="" class="gallery__img">
+        <h3 class="gallery__title">Moncho bienestar Animal</h3>
+      </div>
+      <div class="gallery__item">
+        <img src="../Images/Br-Rambo.png" alt="" class="gallery__img">
+        <h3 class="gallery__title">Rambo</h3>
+      </div>
+    </div>
+
+   
     <!--fin Galeria-->
+
 
     <section class="frase">
       <p>
@@ -99,6 +102,58 @@
         vean."
       </p>
     </section>
+
+     <!-- Carousel -->
+     <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+          <div class="carousel-item active">
+              <img src="../Images/Optane BBQ - general.png" alt="Los Angeles" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                  <h3>Evento Intel Optane</h3>
+                  <p><a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../Images/Diseno-Stand.png" alt="Chicago" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                  <h3>Stand Híbrido</h3>
+                  <p><a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../Images/GyJ-Branding.png" alt="New York" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                  <h3>GyJ Branding</h3>
+                  <p><a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../Images/UI-design.png" alt="New York" class="d-block" style="width:100%">
+              <div class="carousel-caption">
+                  <h3>UI design</h3>
+                  <p><a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a></p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
 
     <!-- Inicio Footer -->
 

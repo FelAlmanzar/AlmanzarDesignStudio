@@ -225,7 +225,7 @@ li a.active, li a:hover{
     filter: grayscale(100%);
   }
   .img4{
-    background-image: url(../Images/GyJ-Branding.png);
+    background-image: url(../Images/Br-Rambo-a.png);
     transition: all 0.2s;
   }
   .img5{
@@ -238,7 +238,7 @@ li a.active, li a:hover{
     transition: all 0.2s;
   }
   .img7{
-    background-image: url(../Images/GyJ-Branding.png);
+    background-image: url(../Images/SM-intel-a.jpg);
     transition: all 0.2s;
   }
   .img8{
@@ -254,6 +254,7 @@ li a.active, li a:hover{
   .img1:hover{
     transform: scale(1.01);
     transition: all 0.4s;
+    transform: rotate(-90deg);
   }
 
   .img2:hover{
@@ -268,7 +269,7 @@ li a.active, li a:hover{
   filter: grayscale(0%);
 }
 .img4:hover{
-  background-image: url(../Images/GyJ-Branding-a.png);
+  background-image: url(../Images/Br-Rambo.png);
   transform: scale(1.01);
   transition: all 0.4s;
 }
@@ -282,10 +283,11 @@ li a.active, li a:hover{
 .img6:hover{
   transform: scale(1.01);
   transition: all 0.4s;
+  transform: rotate(90deg);
 }
 
 .img7:hover{
-  background-image: url(../Images/GyJ-Branding-a.png);
+  background-image: url(../Images/SM-intel.jpg);
   transform: scale(1.01);
   transition: all 0.4s;
 
@@ -392,6 +394,7 @@ li a.active, li a:hover{
       font-weight: bold;
       margin-left: 20px;
       }
+      
       .boton3{
         display: block;
         padding: 10px;
@@ -450,6 +453,7 @@ li a.active, li a:hover{
       transition: all 0.5s;
     }
     .textdig{
+      background-color: $color3;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -459,12 +463,13 @@ li a.active, li a:hover{
         font-family: $font3;
         padding: 30px;
         text-align: center;
+        color: #fff;
       }
     }
   }
   .iconosArq{
     width: 100%;
-    background-color: $color1;
+    background-color: $color3;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -496,32 +501,18 @@ li a.active, li a:hover{
   display: block;
   text-align: center;
   font-family: $font3;
+  color: #000;
   font-size: 80px;
 }
   
-  h2 {
-    font-size: 20px;
-    margin-top: 20px;
+  .sec3 {
+    display: block;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    font-family: $font3;
   }
-  
-  .SM-01 {
-    height: 500px;
-    margin-top: 10px;
-  }
-  
-  .nright {
-    padding: 30px;
-  }
-  
-  .nright p {
-    margin-top: 30px;
-  }
-  
-  h4 {
-    font-size: 50px;
-    margin-left: 40px;
-  }
-  
+
   .mt-4 {
     background-image: url(../Images/IMG-SM-02.png);
     background-size: cover;
@@ -542,6 +533,8 @@ li a.active, li a:hover{
   .mt-4 .SM-02 {
     height: 50px;
   }
+
+  // Inicio Diseño
   
   h5 {
     font-weight: bold;
@@ -578,55 +571,71 @@ li a.active, li a:hover{
     background-color: rgba($color: #fff, $alpha: 0);
   }
 
-  .textCateg{
-    background-color: #f8b900;
-    padding: 20px 0;
-    margin-top: 30px;
-    p{
-        font-size: 100px;
-        text-transform: uppercase;
-        font-family: $font1;
-        font-weight: bold;
-        text-align: center;
-    }
-  }
+  
 
-  #galeria {
-    margin-top: 0px;
-  }
-  
-  #galeria .col-lg-4 {
-    padding: 25px;
-  }
-  
-  #galeria img {
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    padding: 50px 200px;
+    grid-gap: 10px;
+
+    .gallery__item{
+      position: relative;
+      transition: all 0.2s;
+      filter: grayscale(1);
+      
+      
+
+  .gallery__img{
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
   }
-  
-  #galeria img:hover {
-    border: 5px solid #fff;
+  .gallery__title{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: $font3;
+    font-size: 15px;
+  }
+}
+
   }
 
-  .col-lg-4{
-    background-color: $color1;
-    padding: 5px;
-    .titulo{
-        color: #fff;
-        font-size: 30px;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 20px;
-    }
-    p{
-        color: #fff;
-    }
+  .gallery__item:hover{
+    transform: scale(1.02);
+    transition: all 0.5s;
+    filter: grayscale(0);
   }
+
+  .gallery__item:nth-child(2){
+    grid-row-start: span 2;
+    }
+
+    .gallery__item:nth-child(3){
+      grid-column-start: span 2;
+      }
+
+      .gallery__item:nth-child(6){
+        grid-row-start: span 2;
+        }
+
+        .gallery__item:nth-child(8){
+          grid-column-start: span 2;
+          }
+
   
   .frase p{
+    background-color: $color4;
     padding: 50px;
     text-align: center;
+    font-family: $font3;
+    font-size: 30px;
   }
 
 //   Contacto
@@ -665,7 +674,7 @@ li a.active, li a:hover{
   }
   
   .textContact1 {
-    color: #f8b900;
+    color: $color4;
     padding: 30px;
     margin-top: 90px;
     margin-left: 50px;
@@ -774,7 +783,7 @@ li a.active, li a:hover{
   }
 
   .enviar input:hover{
-    background-color: #f8b900;
+    background-color: $color4;
   }
 
 
@@ -824,6 +833,27 @@ li a.active, li a:hover{
         padding: 0 30px;
         margin: 30px 0 30px 5px;
         line-height: 50px;
+      }
+
+      .gallery-container{
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        grid-auto-rows: 180px;
+        padding: 50px 100px;
+      }
+
+      .gallery__item:nth-child(2){
+        grid-column-start: span 1;
+        grid-row-start: span 2;
+      }
+
+      .gallery__item:nth-child(3){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+      }
+      .gallery__item:nth-child(5){
+        grid-column-start: span 1;
+        grid-row-start: span 2;
       }
 }
 
@@ -945,6 +975,27 @@ li a.active, li a:hover{
         color: #000;
       }
 
+      .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        grid-auto-rows: 160px;
+        padding: 50px 60px;
+      }
+
+      .gallery__item:nth-child(2){
+        grid-column-start: span 1;
+        grid-row-start: span 2;
+      }
+
+      .gallery__item:nth-child(3){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+      }
+      .gallery__item:nth-child(5){
+        grid-column-start: span 1;
+        grid-row-start: span 2;
+      }
+
     header {
         background-image: url(../Images/Contacto.jpg);
         background-size: cover;
@@ -954,7 +1005,7 @@ li a.active, li a:hover{
       }
 
     .textContact1 {
-    color: #f8b900;
+    color: $color4;
     padding: 0px;
     margin-top: 10px;
     margin-left: 0px;
@@ -979,6 +1030,7 @@ li a.active, li a:hover{
     line-height: 20px;
     
   }
-
   
 }
+
+@import url(../estilos/Branding-Style.css);
