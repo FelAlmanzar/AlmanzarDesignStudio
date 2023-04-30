@@ -377,10 +377,127 @@ li a.active, li a:hover{
 
   .headerSM{
     background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
     img{
-      width: 400px;
+      width: 500px;
+    }
+    .textSM{
+      p{
+      color: #fff;
+      font-family: $font3;
+      font-size: 100px;
+      font-weight: bold;
+      margin-left: 20px;
+      }
+      .boton3{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: $color4;
+        border-radius: 20px;
+        font-family: $font3;
+        font-weight: bold;
+        transition: all 0.2s;
+      }
+      .boton3:hover{
+        transform: scale(1.1);
+        transition: all 0.4s;
+      }
     }
   }
+
+  .connect{
+    background-color: #0091ff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+.profile{
+  width: 100%;
+  display: flex;
+    flex-flow: row wrap;
+
+  .sec1{
+    width: 100%;
+    
+    .iconosDis{
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      background-color: $color4;
+      .ic1{
+        transition: all 0.2s;
+        img{
+        width: 150px;
+        padding: 20px 20px 0 20px;
+        }
+        h2{
+          font-family: $font3;
+          text-align: center;
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .ic1:hover{
+      transform: scale(1.05);
+      transition: all 0.5s;
+    }
+    .textdig{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      width: auto;
+      p{
+        width: 70%;
+        font-family: $font3;
+        padding: 30px;
+        text-align: center;
+      }
+    }
+  }
+  .iconosArq{
+    width: 100%;
+    background-color: $color1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .ic2{
+      transition: all 0.2s;
+      img{
+      width: 150px;
+      padding: 20px 20px 0 20px;
+      }
+      h2{
+        font-family: $font3;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+    }
+    .ic2:hover{
+      transform: scale(1.05);
+      transition: all 0.5s;
+    }
+  }
+}
+
+.Sec2{
+  background-color: $color4;
+  width: 100%;
+  padding: 50px;
+  display: block;
+  text-align: center;
+  font-family: $font3;
+  font-size: 80px;
+}
   
   h2 {
     font-size: 20px;
